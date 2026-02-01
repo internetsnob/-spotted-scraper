@@ -1,0 +1,230 @@
+{
+  "runId": "2026-02-02T06:00:00.000Z",
+  "startedAt": "2026-02-02T06:00:00.000Z",
+  "completedAt": "2026-02-02T06:00:52.000Z",
+  "totalEvents": 9,
+  "totalErrors": 3,
+  "results": [
+    {
+      "venue": {
+        "id": "jester-king",
+        "name": "Jester King Brewery",
+        "category": "Live Music",
+        "address": "16000 Ranch to Market Rd 1261, Austin, TX 78734",
+        "website": "https://www.jesterking.com/events",
+        "description": "Farm-style brewery with live music on weekends and a stunning Hill Country backdrop.",
+        "tags": ["brewery", "live music", "weekend", "outdoor", "craft beer"]
+      },
+      "status": "success",
+      "events": [
+        {
+          "venueId": "jester-king",
+          "venueName": "Jester King Brewery",
+          "title": "Saturday Live Music — The Dusty Roads",
+          "date": "2026-02-07",
+          "timeStart": "18:00",
+          "timeEnd": "21:00",
+          "description": "Join us Saturday evening for live acoustic sets by The Dusty Roads. Beer garden open. No cover charge.",
+          "coverCharge": "Free",
+          "sourceUrl": "https://www.jesterking.com/events"
+        },
+        {
+          "venueId": "jester-king",
+          "venueName": "Jester King Brewery",
+          "title": "Valentine's Weekend Special Tasting",
+          "date": "2026-02-14",
+          "timeStart": "17:00",
+          "timeEnd": "20:00",
+          "description": "Special paired tasting flight for Valentine's Weekend. Reserve your spot.",
+          "coverCharge": "$15",
+          "sourceUrl": "https://www.jesterking.com/events"
+        }
+      ],
+      "scrapedAt": "2026-02-02T06:00:03.000Z"
+    },
+    {
+      "venue": {
+        "id": "salt-lick-bbq",
+        "name": "The Salt Lick BBQ",
+        "category": "Food & Drink",
+        "address": "18939 TX-1826, Driftwood, TX 78619",
+        "website": "https://www.saltlickbbq.com/events",
+        "description": "Legendary open-pit BBQ with live music on weekends. A Hill Country institution.",
+        "tags": ["bbq", "live music", "weekend", "driftwood", "iconic"]
+      },
+      "status": "success",
+      "events": [
+        {
+          "venueId": "salt-lick-bbq",
+          "venueName": "The Salt Lick BBQ",
+          "title": "Weekend Live Music & BBQ",
+          "date": "2026-02-08",
+          "timeStart": "12:00",
+          "timeEnd": "20:00",
+          "description": "All-you-can-eat BBQ with live music on the patio. Family friendly. Open rain or shine.",
+          "coverCharge": "Free",
+          "sourceUrl": "https://www.saltlickbbq.com/events"
+        }
+      ],
+      "scrapedAt": "2026-02-02T06:00:04.500Z"
+    },
+    {
+      "venue": {
+        "id": "dripping-springs-vineyard",
+        "name": "Dripping Springs Vineyard & Winery",
+        "category": "Live Music",
+        "address": "9575 Lumberman's Circle, Dripping Springs, TX 78620",
+        "website": "https://www.drippingspringsvineyard.com/events",
+        "description": "Wine tastings and live acoustic music in a gorgeous vineyard setting.",
+        "tags": ["winery", "wine tasting", "live music", "vineyard", "events"]
+      },
+      "status": "success",
+      "events": [
+        {
+          "venueId": "dripping-springs-vineyard",
+          "venueName": "Dripping Springs Vineyard & Winery",
+          "title": "Sunday Wine & Live Acoustic",
+          "date": "2026-02-08",
+          "timeStart": "14:00",
+          "timeEnd": "17:00",
+          "description": "Enjoy a flight of our estate wines paired with live acoustic guitar in the vineyard.",
+          "coverCharge": "Free",
+          "sourceUrl": "https://www.drippingspringsvineyard.com/events"
+        }
+      ],
+      "scrapedAt": "2026-02-02T06:00:06.000Z"
+    },
+    {
+      "venue": {
+        "id": "now-and-zen",
+        "name": "Now & Zen Brewing",
+        "category": "Live Music",
+        "address": "18621 US-290 W, Dripping Springs, TX 78620",
+        "website": "https://www.nowandzenbrewing.com/events",
+        "description": "Local craft brewery with regular live music and a relaxed Hill Country vibe.",
+        "tags": ["brewery", "craft beer", "live music", "local"]
+      },
+      "status": "no-events",
+      "events": [],
+      "scrapedAt": "2026-02-02T06:00:07.500Z"
+    },
+    {
+      "venue": {
+        "id": "treaty-oak-distilling",
+        "name": "Treaty Oak Distilling",
+        "category": "Live Music",
+        "address": "19330 State Hwy 12, Dripping Springs, TX 78620",
+        "website": "https://www.treatyoakdistilling.com/events",
+        "description": "Award-winning distillery with tastings, cocktails, and weekend live music.",
+        "tags": ["distillery", "spirits", "cocktails", "live music", "tasting"]
+      },
+      "status": "success",
+      "events": [
+        {
+          "venueId": "treaty-oak-distilling",
+          "venueName": "Treaty Oak Distilling",
+          "title": "Friday Happy Hour — Craft Cocktails",
+          "date": "2026-02-06",
+          "timeStart": "16:00",
+          "timeEnd": "19:00",
+          "description": "Half-price cocktails and free tastings every Friday. Live music some weeks.",
+          "coverCharge": "Free",
+          "sourceUrl": "https://www.treatyoakdistilling.com/events"
+        }
+      ],
+      "scrapedAt": "2026-02-02T06:00:09.000Z"
+    },
+    {
+      "venue": {
+        "id": "leatherneck-brewing",
+        "name": "Leatherneck Brewing",
+        "category": "Food & Drink",
+        "address": "316 Tumbleweed Pkwy, Dripping Springs, TX 78620",
+        "website": "https://www.leatherneckbrewing.com/events",
+        "description": "Veteran-owned brewery in downtown DS. Trivia nights, happy hours, and craft beers on tap.",
+        "tags": ["brewery", "happy hour", "trivia", "downtown", "veteran-owned"]
+      },
+      "status": "success",
+      "events": [
+        {
+          "venueId": "leatherneck-brewing",
+          "venueName": "Leatherneck Brewing",
+          "title": "Tuesday Trivia Night",
+          "date": "2026-02-10",
+          "timeStart": "19:00",
+          "timeEnd": "21:00",
+          "description": "Weekly trivia with prizes. Teams of 2-6. Free entry, drink specials all night.",
+          "coverCharge": "Free",
+          "sourceUrl": "https://www.leatherneckbrewing.com/events"
+        }
+      ],
+      "scrapedAt": "2026-02-02T06:00:10.500Z"
+    },
+    {
+      "venue": {
+        "id": "olive-branch",
+        "name": "Olive Branch Kitchen & Bar",
+        "category": "Food & Drink",
+        "address": "316 Tumbleweed Pkwy Suite 105, Dripping Springs, TX 78620",
+        "website": "https://www.olivebranch.com/events",
+        "description": "Farm-to-table dining right in downtown Dripping Springs.",
+        "tags": ["farm-to-table", "dinner", "date night", "downtown", "bar"]
+      },
+      "status": "error",
+      "events": [],
+      "error": "Connection timeout after 10000ms",
+      "scrapedAt": "2026-02-02T06:00:22.500Z"
+    },
+    {
+      "venue": {
+        "id": "hamilton-pool",
+        "name": "Hamilton Pool Preserve",
+        "category": "Outdoors",
+        "address": "23440 Hamilton Pool Rd, Austin, TX 78738",
+        "website": "https://parks.traviscounty.gov/hamilton-pool-preserve",
+        "description": "One of the most stunning natural swimming holes in Texas.",
+        "tags": ["swimming", "nature", "preserve", "reservation", "scenic"]
+      },
+      "status": "success",
+      "events": [
+        {
+          "venueId": "hamilton-pool",
+          "venueName": "Hamilton Pool Preserve",
+          "title": "Weekend Access — Reservations Open",
+          "date": "2026-02-08",
+          "timeStart": "08:30",
+          "timeEnd": "16:00",
+          "description": "Reservations now open for this weekend. Limited to 120 visitors per day. Book early.",
+          "sourceUrl": "https://parks.traviscounty.gov/hamilton-pool-preserve"
+        }
+      ],
+      "scrapedAt": "2026-02-02T06:00:24.000Z"
+    },
+    {
+      "venue": {
+        "id": "hill-country-arts",
+        "name": "Hill Country Center for the Arts",
+        "category": "Arts & Culture",
+        "address": "19550 Dripping Springs Ranch Rd, Dripping Springs, TX 78620",
+        "website": "https://www.hillcountryarts.com/events",
+        "description": "Live theater, art shows, and cultural performances.",
+        "tags": ["theater", "art shows", "performances", "culture", "events"]
+      },
+      "status": "success",
+      "events": [
+        {
+          "venueId": "hill-country-arts",
+          "venueName": "Hill Country Center for the Arts",
+          "title": "A Midsummer Night's Dream — Opening Night",
+          "date": "2026-02-13",
+          "timeStart": "19:30",
+          "timeEnd": "21:30",
+          "description": "Shakespeare's classic in a stunning outdoor setting. Tickets $25 adults / $15 students.",
+          "coverCharge": "$25",
+          "sourceUrl": "https://www.hillcountryarts.com/events"
+        }
+      ],
+      "scrapedAt": "2026-02-02T06:00:25.500Z"
+    }
+  ]
+}
