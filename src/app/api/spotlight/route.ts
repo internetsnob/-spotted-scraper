@@ -1,5 +1,37 @@
 ﻿import { NextResponse } from 'next/server';
+import { kv } from '@vercel/kv';
+import type { SpotlightEntry, ScrapedEvent } from '@/lib/types';
 
 export async function GET() {
-  return NextResponse.json({ test: 'spotlight api working' });
+  try {
+    const spotlight = await kv.get<SpotlightEntry>('spotlight');
+    return NextResponse.json(spotlight || { spotlight: null });
+  } catch (err) {
+    return NextResponse.json({ error: 'Failed to read spotlight' }, { status: 500 });
+  }
+}
+
+export async function POST(request: Request) {
+  try {
+    const body = await request.json();
+    const event: ScrapedEvent = body.event;
+    if (!event) {
+      return NextResponse.json({ error: 'Missing event data' }, { status: 400 });
+    }
+    const now = new Date();
+    const day = now.getDay();
+    const diff = now.getDate() - day + (day === 0 ? -6 : 1);
+    const monday = new Date(now.setDate(diff));
+    const weekOf = monday.toISOString().split('T')[0];
+    const spotlightEntry: SpotlightEntry = {
+      event,
+      selectedAt: new Date().toISOString(),
+      weekOf,
+      status: 'pending',
+    };
+    await kv.set('spotlight', spotlightEntry);
+    return NextResponse.json({ success: true, spotlight: spotlightEntry });
+  } catch (err) {
+    return NextResponse.json({ error: 'Failed to save spotlight' }, { status: 500 });
+  }
 }

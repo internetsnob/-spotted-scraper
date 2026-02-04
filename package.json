@@ -9,6 +9,7 @@
     "scrape": "npx ts-node src/lib/scraper.ts"
   },
   "dependencies": {
+    "@vercel/kv": "^3.0.0",
     "axios": "^1.6.0",
     "cheerio": "^1.0.0-rc.12",
     "next": "^14.0.0",
