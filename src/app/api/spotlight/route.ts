@@ -1,15 +1,4 @@
-/**
- * POST /api/spotlight
- * 
- * Saves the user's selected spotlight event to disk.
- * The /weekly page will read this to display the current week's featured event.
- * 
- * GET /api/spotlight
- * 
- * Returns the currently saved spotlight event (if any).
- */
-
-import { NextResponse } from "next/server";
+﻿import { NextResponse } from "next/server";
 import * as fs from "fs";
 import * as path from "path";
 import type { SpotlightEntry, ScrapedEvent } from "@/lib/types";
@@ -21,15 +10,11 @@ export async function GET() {
     if (!fs.existsSync(SPOTLIGHT_FILE)) {
       return NextResponse.json({ spotlight: null });
     }
-
     const raw = fs.readFileSync(SPOTLIGHT_FILE, "utf-8");
     const data: SpotlightEntry = JSON.parse(raw);
     return NextResponse.json(data);
   } catch (err) {
-    return NextResponse.json(
-      { error: "Failed to read spotlight" },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: "Failed to read spotlight" }, { status: 500 });
   }
 }
 
@@ -37,35 +22,23 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     const event: ScrapedEvent = body.event;
-
     if (!event) {
-      return NextResponse.json(
-        { error: "Missing event data" },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: "Missing event data" }, { status: 400 });
     }
-
-    // Calculate the Monday of the current week
     const now = new Date();
     const day = now.getDay();
-    const diff = now.getDate() - day + (day === 0 ? -6 : 1); // Monday
+    const diff = now.getDate() - day + (day === 0 ? -6 : 1);
     const monday = new Date(now.setDate(diff));
     const weekOf = monday.toISOString().split("T")[0];
-
     const spotlightEntry: SpotlightEntry = {
       event,
       selectedAt: new Date().toISOString(),
       weekOf,
       status: "pending",
     };
-
     fs.writeFileSync(SPOTLIGHT_FILE, JSON.stringify(spotlightEntry, null, 2));
-
     return NextResponse.json({ success: true, spotlight: spotlightEntry });
   } catch (err) {
-    return NextResponse.json(
-      { error: "Failed to save spotlight" },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: "Failed to save spotlight" }, { status: 500 });
   }
 }
