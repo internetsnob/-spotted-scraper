@@ -1,4 +1,5 @@
-﻿import { NextResponse } from "next/server";
+﻿// Force rebuild - updated 2/4/2026 5:05:23 PM
+import { NextResponse } from "next/server";
 import * as fs from "fs";
 import * as path from "path";
 import type { SpotlightEntry, ScrapedEvent } from "@/lib/types";
